@@ -1,5 +1,6 @@
 ﻿import PostAction from "@/components/feed/PostAction";
 import PostImage from "@/components/feed/PostImage";
+import { EllipsisVertical } from "lucide-react";
 
 type PostCardProps = {
   title?: string;
@@ -7,7 +8,7 @@ type PostCardProps = {
 };
 
 export default function PostCard({
-  title = "한 달 안에 5kg 빼게 ㅅㄱ",
+  title = "한 달 안에 5kg 게 ㅅㄱ",
   chips = [],
 }: PostCardProps) {
   return (
@@ -22,25 +23,15 @@ export default function PostCard({
           className="flex h-8 w-8 items-center justify-center text-zinc-500"
           aria-label="더보기"
         >
-          <svg
-            width="18"
-            height="18"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            aria-hidden="true"
-          >
-            <circle cx="12" cy="5" r="1.6" />
-            <circle cx="12" cy="12" r="1.6" />
-            <circle cx="12" cy="19" r="1.6" />
-          </svg>
+          <EllipsisVertical />
         </button>
       </div>
       <PostImage text={title} chips={chips} />
       <PostAction />
       <div className="px-4 pb-4 text-xs text-zinc-600">
         <p className="font-semibold text-zinc-900">김지상 되겠냐?</p>
-        <p>조현율 노이나 먹여</p>
-        <p className="mt-1 font-semibold text-zinc-900">구본형 응가</p>
+        <p>조한솔 ㅗ이나 먹여</p>
+        <p className="mt-1 font-semibold text-zinc-900">구본희 응가</p>
       </div>
     </article>
   );
