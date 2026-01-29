@@ -1,5 +1,5 @@
 ﻿import PostCard from "@/components/feed/PostCard";
-import { ChevronLeft, EllipsisVertical } from "lucide-react";
+import { ChevronLeft } from "lucide-react";
 
 export default function MainPage() {
   const showReactions = true;
@@ -11,18 +11,10 @@ export default function MainPage() {
         <button
           type="button"
           className="flex h-8 w-8 items-center justify-center rounded-full text-zinc-900"
-          aria-label="뒤로"
         >
           <ChevronLeft />
         </button>
         <h1 className="flex-1 text-sm font-semibold text-zinc-900">Main</h1>
-        {/* <button
-          type="button"
-          className="flex h-8 w-8 items-center justify-center text-zinc-500"
-          aria-label="더보기"
-        >
-          <EllipsisVertical />
-        </button> */}
       </header>
       <section className="px-4 py-3">
         <PostCard chips={chips} />

@@ -8,7 +8,7 @@ type PostCardProps = {
 };
 
 export default function PostCard({
-  title = "한 달 안에 5kg 게 ㅅㄱ",
+  title = "한 달 안에 5kg 뺄게 ㅅㄱ",
   chips = [],
 }: PostCardProps) {
   return (
@@ -30,7 +30,7 @@ export default function PostCard({
       <PostAction />
       <div className="px-4 pb-4 text-xs text-zinc-600">
         <p className="font-semibold text-zinc-900">김지상 되겠냐?</p>
-        <p>조한솔 ㅗ이나 먹여</p>
+        <p>조한솔 ㅗ이나 먹어</p>
         <p className="mt-1 font-semibold text-zinc-900">구본희 응가</p>
       </div>
     </article>

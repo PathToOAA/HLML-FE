@@ -1,4 +1,6 @@
-﻿export default function CreatePage() {
+﻿import { ChevronLeft } from "lucide-react";
+
+export default function CreatePage() {
   const isResultEdit = false;
 
   return (
@@ -9,20 +11,11 @@
           className="flex h-8 w-8 items-center justify-center rounded-full text-zinc-900"
           aria-label="뒤로"
         >
-          <svg
-            width="18"
-            height="18"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.8"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="M15 18l-6-6 6-6" />
-          </svg>
+          <ChevronLeft />
         </button>
-        <h1 className="flex-1 text-sm font-semibold text-zinc-900">새 게시물</h1>
+        <h1 className="flex-1 text-sm font-semibold text-zinc-900">
+          새 게시물
+        </h1>
         {isResultEdit ? (
           <div className="flex items-center gap-2">
             <button
@@ -48,9 +41,9 @@
         )}
       </header>
       <section className="px-4 py-4">
-        <div className="flex h-[360px] w-full items-center justify-center bg-[#2f2f2f] px-6 text-center text-white">
+        <div className="flex h-90 w-full items-center justify-center bg-[#2f2f2f] px-6 text-center text-white">
           <p className="text-xl font-semibold leading-relaxed tracking-tight">
-            한 달 안에 5kg 빼게 ㅅㄱ
+            한 달 안에 5kg 뺄게 ㅅㄱ
           </p>
         </div>
         <div className="mt-3 flex items-center justify-center gap-2">
