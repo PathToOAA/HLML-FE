@@ -8,7 +8,7 @@ type AppShellProps = {
 export default function AppShell({ children }: AppShellProps) {
   return (
     <div className="min-h-screen flex justify-center">
-      <div className="flex min-h-screen w-full max-w-[390px] flex-col bg-white ">
+      <div className="flex min-h-screen w-full max-w-120 min-w-90 flex-col bg-white ">
         {children}
         <BottomNav />
       </div>
